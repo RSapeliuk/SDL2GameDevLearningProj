@@ -78,11 +78,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\R. Sapeliuk\source\repos\SDL2GameDevLearningProj\SDL2-2.0.12\include;C:\Users\R. Sapeliuk\source\repos\SDL2GameDevLearningProj\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\R. Sapeliuk\source\repos\SDL2GameDevLearningProj\SDL2-2.0.12\lib\x86;C:\Users\R. Sapeliuk\source\repos\SDL2GameDevLearningProj\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\SDL2-2.0.12\include;$(SolutionDir)\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\SDL2-2.0.12\lib\x86;$(SolutionDir)\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\IdeaProjects\VSProj\SDL2-2.0.12\include;E:\IdeaProjects\VSProj\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\IdeaProjects\VSProj\SDL2-2.0.12\lib\x86;E:\IdeaProjects\VSProj\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -113,6 +115,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
