@@ -78,13 +78,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)\SDL2-2.0.12\include;$(SolutionDir)\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\SDL2-2.0.12\libs\;$(SolutionDir)\SDL2_image-2.0.5\libs\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)\SDL2-2.0.12\include;$(ProjectDir)\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\SDL2-2.0.12\libs\;$(ProjectDir)\SDL2_image-2.0.5\libs\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\IdeaProjects\VSProj\SDL2-2.0.12\include;E:\IdeaProjects\VSProj\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\IdeaProjects\VSProj\SDL2-2.0.12\lib\x86;E:\IdeaProjects\VSProj\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)SDL2-2.0.12\include;$(ProjectDir)SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)SDL2-2.0.12\lib\;$(ProjectDir)SDL2_image-2.0.5\lib\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
